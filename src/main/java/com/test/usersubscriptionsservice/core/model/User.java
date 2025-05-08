@@ -3,7 +3,7 @@ package com.test.usersubscriptionsservice.core.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
-@Table(name = "user_model")
+@Table(name = "users")
 @Entity
 @Data
 public class User {
