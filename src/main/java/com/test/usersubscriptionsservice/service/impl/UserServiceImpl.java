@@ -43,7 +43,7 @@ public class UserServiceImpl implements UserService {
                 .orElseThrow(() -> new UserNotFoundException("User not found with ID: " + id));
 
         if (userDTO.newUsername() != null) {
-            user.setEmail(userDTO.newUsername());
+            user.setUsername(userDTO.newUsername());
         }
         if (userDTO.newPassword() != null) {
             user.setPassword(userDTO.newPassword());
